@@ -1,0 +1,225 @@
+DEVOPS: 13/03/2025
+•	WHAT IS DEVOPS? Means to deliver the application speed into market we using devops
+SDLC: software development lifecycle	
+•	Why devops? means in software domain, we have 2 teams for developing the application 
+1.	Development -plan, code, build, test
+2.	Operations -deploy, operate, monitoring 
+•	What is deployment? Means process of installing the application in the server 
+•	Shortcut for SDLC life cycle
+
+P C B          Pakistan cricket board director is TOM
+    D
+T O M
+
+
+•	Devops is not a tool, technology or framework, devops is a methodology
+DEVOPS LIFE CYCLE:
+•	The logo of devops represents infinite because it’s a never-ending continuous process
+
+P C B   	    Pakistan cricket board Docter is TOM
+    D R
+T O M
+
+IF WE BECOME DEVOPS ENG WHAT ARE ROLES AND RESPONSIBILITIES
+ROLES AND RESPONSIBILITIES
+•	Cloud/server/network/architecture     		used by AWS
+•	Configuring & maintaining infrastructure 		used by terraform
+•	CI/CD pipelines    					used by Jenkins
+•	Automating daily tasks 				used by ansible and shell scripts
+•	Continuous monitoring				used by 
+•	Migrating form monolithic and microservices 	used by dockers and Kubernetes
+
+SOFTWARE ARCHITECTURES: 14/03/2025
+1.	ONE- TIER
+2.	TWO-TIER
+3.	THREE-TIER
+4.	N-TIER
+•	TIER MEANS ITS IS A SERVER OR LAYER 
+•	Server: server means it serve the service to the end user
+•	In real time mainly work on 3 services they are 
+1.	Web server
+2.	Application server
+3.	Db server 
+WEB SERVER:
+•	It is also called as the presentation layer
+•	Web server is used to see the front-end services to the end user, basically to show the application to the end user 
+•	Who works: UI/UX developers 
+•	What they are use means: web technologies 
+•	Ex:  HTML, CSS, JS
+
+APP SERVER:
+•	It is also called as logical layer 
+•	App server is used to use the application to end user 
+•	Who work on it: backend developers
+•	What they use means: programming languages
+•	Ex: java, python, c, c++
+
+DATABASE SERVER:
+•	It is also called as db. Layer
+•	Database server is used to store & retrieve the data 
+•	Who work on it: db. admins 
+•	What they used: db. Languages
+•	Ex: SQL, oracle, postgree
+
+ONE-TIER ARCHITECTURE:
+•	We use one- tier architecture what kind of application we develop means standalone applications.
+•	The application will work on a local laptop.
+•	All layers will be on locally.
+•	It will not require any internet connection.
+•	Ex: VLC MEDIA PLAYER 
+TWO -TIER ARCHITECTURE
+•	We use two -tier architecture what kind of application we develop means client server application
+•	The application will work on a local laptop
+•	Local: presentation layer, logical layer 		db.: internet 
+•	It will be requiring internet connection 
+•	Ex: banking application, jio Savan 
+THREE TIER ARCHITECTURE
+•	We use three-tier architecture what kind of application we develop means web applications (real time applications)
+•	Application is no need to be in the local computers
+•	Everything we can use from the internet
+•	Ex: WhatsApp, Facebook, Instagram, Amazon, Flipkart.
+
+AGENDA: 17/03/2025
+Create a web server and show the live environment:
+•	Server: A server provides various services to end users or client devices over a network. 
+•	OS: operating system is used to communication b/w computer and user 
+•	To create the server, we need to have cloud account 
+•	We are using AWS cloud account 
+•	AWS-server are called as EC2 instances-elastic compute cloud
+•	To create EC2 instances we need to perform 7 steps.
+1.	TAGS     -NAME 
+2.	AMI (AMAZON MACHINE IMAGE)    -OS AND WE GET SOME SOFTWARE PACKAGES 
+3.	INSTANCE _TYPE   			-CPU AND RAM
+4.	KEY_PAIR	-LOGIN (PUBLIC-AWS, PRIVATE-USER) (public key is manage by, and private key is manage by user)
+When we create keypair its store in our local laptop.
+
+5.	NETWORK -VPC(VIRTUAL PRIVATE CLOUD ),security groups(port number =0-65535)
+6.	Storage -8gb -16tb 
+7.	Summary -to review 
+SSH-SECURE SHELL (22)-TO COMMUNICATE WITH SERVERS 
+AGENDA -18-03-2025
+OS-TYPES 
+OS -OS means to communicates with servers 
+1.	WINDOWS
+2.	LINUX
+3.	MACOS
+WHY TO USE LINUX:
+•	Every electronics device all using Linux operating systems 
+Advantages –
+1.	Free and open sources 
+2.	Security
+3.	Performance is too good 
+4.	Multiuser based 
+5.	Multi-tasking 
+MODES OF LINUX-TWO MODES:
+1.	GUI 	: GRAPHICAL USER INTERFACE -EX: CREATING THE FLIES IN LOCAL COMPUTER
+2.	CLI	: COMMAND LINE INTERFACE -EX: COMUNITICATING WITH SEREVR WE ARE USING COMMANDS
+COMMANDS:
+1.	Sudo -I		: To switch from ec2-user to root users
+2.	Sudo su -		: To switch from ec2-user to root user
+3.	Sudo su		: To switch from ec2-user to root user
+4.	Logout (ctrl d)	: To switch from root user to ec2- user
+5.	Cat 			: display the content from files 
+6.	Cat /proc/CPUinfo	:to show the CPU information
+7.	Lscpu			: to show the CPU information
+8.	Cat /proc/meminfo	: to show the memory information      		this is RAM INFORMATION command 
+9.	Lsmem		: to show the memory information     		  this is RAM INFORMATION command 
+10.	Fdisk -l		:to show the ROM or volume information
+11.	Lsblk			: to show the ROM or volume information   	LSBLKMEANS LIST THE BLOCK DEVICES 
+12.	Hostname -I		:to show the Ip address   else we can use this command alsoipconfig  ip addr ip addr show   
+13.	Clear or ctrl L	:to clear the screen 
+
+FILE COMMANSD:
+1.	TOUCH FILENAME			:to create a file 
+2.	LS/LL					:to show list of files
+3.	CAT FILENAME 			:to show the content of filesMORE command also we use to show the content
+4.	CAT>>FILENAME 			:to insert the content in file      static method
+5.	ENTER AND CTRL D			:to save content and exit 
+6.	CP FILE1 FILE2			: copies the content from file1 to file2 here no need to create file2 before copy  directly Linux will create the file ,actually Linux will create files automatically while giving file name 
+7.	Cat file1>> file2			: if we copied from file1 to file2, file2 content will gone ,that’s why  this command will use to not erase or without override  content form the file 2
+8.	MV FILE1 FILE2			: rename the file name 
+9.	RM FILE1				: To remove the file 
+10.	RM FILE1 -F				: To remove the file FORCEFULLY WITH OUT ASKING 
+11.	RM * -F				: To remove the ALL file FORCEFULLY
+12.	TOUCH file {1..100}			:to create 100 files at a time
+13.	Head file1				: by default, it shows the content of first 10 lines 
+14.	Head -5 file1				:it shows the content of first 5 lines 
+15.	Tail file1				: by default, it shows the content of first 10 lines
+16.	Tail -20 file1				: it shows the content of first 20 lines
+17.	SED -N ‘5,15P’ FILE1			:to show middle line content 5th line to 15th line                                                                              						SED MEANS -STREAM EDITOR 														-N NUMBER  P MEANS -PRINT 
+6th session
+EDITORS     
+•	To edit the files 
+•	Editor types 
+1.	VIM/vi
+2.	Nano
+Editor commands:
+Vim file1to create the file in editor
+1.	Small “I”	:TO INSERT THE CONTENT smallI 
+2.	Esc 		:to come out from insert mode  
+Save mode:
+3.	: w		:to save 
+4.	: q		:to quit
+5.	: wq		:to save and quit 
+6.	: wq!		:to save and quit forcefully 
+Insert mode:	
+7.	A        		: to end of the line dollar we can use 
+8.	I 		:to go starting of the line zero also use for it
+9.	O 	  	:create new line above the existing
+10.	Small “o”	: create new line below the existing
+Command mode:
+11.	Shift g		: bottom of file
+12.	Shift gg	: top of the file
+13.	: set number 	:to show numbers of lines inside the file
+14.	: n		:to go specific of the line n means (,2,3,4……….so on)
+15.	 (yy) 		:to copy the line 
+16.	(10yy)		: to copy the 10 lines
+17.	(p) 		:to paste 
+18.	(10p) 		:to paste 10 times 
+19.	(dd) 		:to delete 
+20.	(10dd)		:to delete 10 lines 
+21.	(u)		: undo (unfortunate if we delete, we can undo that lines)
+22.	Ctrl r		: redo (unfortunate if we delete the undo, we can do redo to return the line )
+23.	/word 		:to search for a specific word to search word means any word to search 
+24.	: %s/word1/new word/	: to replace word1 with new word  in side the file 
+25.	: %s/word1/new word/g	: to replace word1 with new wordif we have repeated words in the same line 
+Permissions:
+-rw-r- - r-- in Linux we have to give permissions to  file ,why to give permissions means whenever  we  execute scripts some permissions is required
+3 types of permissions:
+1.	(-)		: regular files
+2.	(b)	 	: blocked files 
+3.	(c) 	 	: character file
+4.	(d)		: directory
+5.	 (l)		: link file
+Permissions:
+•	Read		: r	:4
+•	Write		: w	:2
+•	Executable 	: x	:1
+Categories:
+•	User	: rw-		:6
+•	Group	: r--		:4
+•	Others: r--		:4
+•	Ch mod  we give permissions to users 
+•	Other method is chmod u=rw,g=rx,o=wx file1
+•	
+
+GREP command:
+•	GREPglobal regular expression print
+•	Grep command is used to search a words in the file
+1.	Grep word1 file1				:to search for a word  it is case sensitive
+2.	Grep word1 file1 -i				:to search for word to avoid case sensitive we are using -i
+3.	Grep word1 file1 -ic				: how many time the word is repeating
+4.	Grep word1 file1 -v 				:to print lines without word given in command	
+5.	Grep ‘word1\| word2\| word 3 file1		:to search multiple words
+6.	Cat file1 | grep word1 			: ‘|’: it is the pipe symbol: here 1st command is the input for second command. 
+SED command:
+•	To used to replace the words in the file 
+1.	Sed ‘s/word1/new word/’ file1			:to replace the word with new word but really it not change 
+2.	Sed ‘s/word1/new word/’ file1 >> file2		: it will change in the file2 but not in the file 1
+3.	Sed ‘s/word1/new word; s/word/new word/’ file1 	:to replace the multiple words
+4.	Sed ‘2c  words’ file1					:to replace a line with other line 
+5.	Sed -n file 						: to print the number lines 
+6.	Sed -n ‘5,12p’ file1 					:to print the line from 5 to 12
+7.	Cat -n file1  | sed -n ‘5,12p’
+8.	Sed -n ‘10p’ file1					: to print specific line only 
+
